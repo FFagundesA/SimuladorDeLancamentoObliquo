@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador de Lançamento Oblíquo</title>
+</head>
+
+<body>
+    <h1>Simulador de Lançamento Oblíquo</h1>
+    <div class="input-container">
+        <label for="v0">Velocidade inicial (m/s):</label>
+        <input type="number" id="v0">
+    </div>
+    <div class="input-container">
+        <label for="angLanc">Ângulo de lançamento (graus):</label>
+        <input type="number" id="angLanc">
+    </div>
+    <div class="input-container">
+        <label for="g">Aceleração da gravidade (m/s²):</label>
+        <input type="number" id="g" value="9.81">
+    </div>
+    <button id="calculateBtn">Calculate</button>
+    <button id="rstBtn">Reset</button>
+    <div class="resultados">
+        <b id="tVoo"></b>
+        <b id="dist"></b>
+        <b id="alt"></b>
+    </div>
+    <div id="Area">
+        <div id="dot"></div>
+        <div id="maxAltDot"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
